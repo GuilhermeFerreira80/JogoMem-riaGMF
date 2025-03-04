@@ -1,5 +1,8 @@
 
+.transicao{
+    transition: 1s;
 
+}
 #main-title {
     font-size: 28px;
     font-family: Arial, sans-serif;
@@ -146,4 +149,16 @@ h3 {
     }
 }
 
+
+#qrcode-container{
+    border: 5px solid brown;
+    padding: 15px;
+    border-radius: 2em;
+    width: auto;
+    margin: 5%;
+}
+
+#qrcode-container img{
+    width: 100%;
+}
 

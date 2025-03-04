@@ -1,7 +1,9 @@
 const inicialContainer=document.getElementById('inicial-container');
 const taskContainer=document.getElementById('task-container');
+const qrcode= document.getElementById('qrcode-container');
 let tentativas = [0, 0, 0, 0, 0, 0];
 let maxTentativas = [];
+let totalVerdes=0;
 
 
 function nextAction_1(){
@@ -33,11 +35,20 @@ function tentarSubmeter(num) {
     tentativas[num]++; 
 
     if (tentativas[num] < maxTentativas[num]) {
-        containers[num].style.backgroundColor = "red"; 
+        containers[num].style.backgroundColor = "red";
+        containers[num].classList.toggle('transicao');
+
     } else {
+        totalVerdes++;
         containers[num].style.backgroundColor = "green"; 
         buttons[num].style.pointerEvents = "none"; 
         buttons[num].style.opacity = "0.5"; 
-        tentativas[num] = 0; 
+        tentativas[num] = 0;
+        if(totalVerdes===6){
+            taskContainer.style.display='none';
+            qrcode.style.display='block';
+        }
     }
 }
+
+
