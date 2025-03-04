@@ -4,11 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="mainContainer">
+    <div id="main-title">
+        ATIVIDADE DOS VETERANOS
+    </div>
+    <div id="inicial-container">
+        <p id="titulo-index">Sejam bem vindos! <br><br>Aqui passarão pelo vosso julgamento Inicial!</p>
+        <h3>
+            Terão de Completar cada desafio proposto rapidamente, e apenas têm <span class="sublinhado">3 TENTATIVAS</span> para cada uma delas! <br>
+            <br><br>(NÂO SAIAM DO SITE ATÉ TERMINAR)
+        </h3>
         
+        <div class="continue-button" onclick="nextAction_1()">
+            CONTINUAR
+        </div>
+    
+    </div>
+    <div id="task-container" style="display: none;">
+        
+
+        <div class="task-box task-box1" >
+            <div class="task-text">
+                <p>Medir a rotunda D.Dinis com um palito</p>
+            </div>
+            <input type="text" class="task-input" placeholder="Inserir Texto!">     
+            
+            <div class="continue-button" onclick="tentarSubmeter(0)">
+                CONTINUAR
+            </div>
+        </div>
+        <div class="task-box task-box2" >
+            <div class="task-text">
+                <p>Contar as escadas monumentais</p>       
+            </div>
+            <input type="text" class="task-input" placeholder="Inserir Texto!">
+            <div class="continue-button" onclick="tentarSubmeter(1)">
+                CONTINUAR
+            </div>
+        </div>
+        <div class="task-box task-box3" >
+            <div class="task-text">
+                <p>Medir a abertura da porta férrea com um palito</p>  
+            </div>
+            <input type="text" class="task-input" placeholder="Inserir Texto!">
+            <div class="continue-button" onclick="tentarSubmeter(2)">
+                CONTINUAR
+            </div>
+        </div>
+        <div class="task-box task-box4" >
+            <div class="task-text">
+                <p>Medir a distância da porta das matemáticas às físicas com um palito</p>
+            </div>
+            <input type="text" class="task-input" placeholder="Inserir Texto!">
+            <div class="continue-button" onclick="tentarSubmeter(3)">
+                CONTINUAR
+            </div>
+        </div>
+        <div class="task-box task-box5" >
+            <div class="task-text">
+                <p>Medir a largura de um degrau das monumentais com 1 palito</p>
+            </div>
+            <input type="text" class="task-input" placeholder="Inserir Texto!">
+            <div class="continue-button" onclick="tentarSubmeter(4)">
+                CONTINUAR
+            </div>
+        </div>
+        <div class="task-box task-box6" >
+            <div class="task-text">
+                <p>Medir a distância entre as portas da antiga faculdade de medicina com 1 palito
+                </p>
+
+            </div>
+            <input type="text" class="task-input" placeholder="Inserir Texto!">
+            <div class="continue-button" onclick="tentarSubmeter(5)">
+                CONTINUAR
+            </div>
+        </div>
     </div>
 
 
